@@ -1,3 +1,4 @@
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Layout from './components/Layout/Layout';
@@ -9,13 +10,13 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path='/' exact>
+        <Route path="/" exact>
           <HomePage />
         </Route>
-        <Route path='/auth'>
+        <Route path="/auth">
           <AuthPage />
         </Route>
-        <Route path='/profile'>
+        <Route path="/profile">
           <UserProfile />
         </Route>
       </Switch>
