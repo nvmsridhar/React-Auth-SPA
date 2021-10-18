@@ -10,7 +10,7 @@ const MainNavigation = () => {
   return (
     <header className={classes.header}>
       <Link to="/">
-        <div className={classes.logo}>React Auth</div>
+        <div className={classes.logo}>React Auth SPA</div>
       </Link>
       <nav>
         <ul>
@@ -19,12 +19,16 @@ const MainNavigation = () => {
               <Link to="/auth">Login</Link>
             </li>
           )}
-          {isLoggedIn && <li>
-            <Link to="/profile">Profile</Link>
-          </li>}
-          {isLoggedIn && <li>
-            <button>Logout</button>
-          </li>}
+          {isLoggedIn && (
+            <li>
+              <Link to="/profile">Profile</Link>
+            </li>
+          )}
+          {isLoggedIn && (
+            <li>
+              <button>Logout</button>
+            </li>
+          )}
         </ul>
       </nav>
     </header>
